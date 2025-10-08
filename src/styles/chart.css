@@ -1,0 +1,24 @@
+.chart-container {
+  height: 300px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+.recharts-responsive-container {
+  outline: none;
+}
+
+.recharts-text {
+  fill: #ccc !important;
+}
+
+.legend-box {
+  color: #ccc;
+  border: 1px solid #ccc;
+  width: fit-content;
+  font-size: 12px;
+  font-style: italic;
+  padding: 5px 10px;
+  float: right;
+  margin-right:20px;
+}

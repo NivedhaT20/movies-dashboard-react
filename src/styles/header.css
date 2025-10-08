@@ -1,0 +1,18 @@
+.app-header {
+  height: 60px;
+  background: linear-gradient(to top, #003663, #000000);
+  border-bottom:1.5px solid #666fe3;
+}
+
+.app-logo {
+  height: 35px;
+  margin: 15px;
+}
+
+.title-text {
+  margin-right: 40px;
+  margin-top: 20px;
+  color: #fffffff2;
+  font-weight: bold;
+  float: right;
+}

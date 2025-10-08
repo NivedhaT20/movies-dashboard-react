@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "module": "commonjs",
+    "verbatimModuleSyntax": false,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/setupTests.ts",
+    "src/styles/global.d.ts",
+    "src/global.d.ts"
+  ]
+}
