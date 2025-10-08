@@ -43,7 +43,7 @@ const Dashboard = () => {
   // Messages to be displayed during app load or error
   if (loadingMovies || loadingViews)
     return (
-      <ErrorPage message="Please wait, your dashboard is loading and will be ready shortly..." />
+      <ErrorPage message="Your dashboard is loading and will be ready shortly..." />
     );
   if (errorMovies)
     return <ErrorPage message={`Error loading movies: ${errorMovies}`} />;

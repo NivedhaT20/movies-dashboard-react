@@ -7,7 +7,7 @@ interface ErrorPageProps {
 const ErrorPage = ({ message }: ErrorPageProps) => {
   return (
     <div className="error-container">
-      <h1>Oops!</h1>
+      <h1>Hang tight!</h1>
       <p> {message} </p>
     </div>
   );

@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useFetchMovies } from "../services/useFetchMovies";
 import { formatGenre } from "../utils/format";
+import ErrorPage from "./ErrorPage";
 import { Button } from "react-bootstrap";
 
 import "../styles/movie-details.css";
@@ -14,8 +15,8 @@ const MovieDetail = () => {
     error: errorMovies,
   } = useFetchMovies();
 
-  if (loadingMovies) return <p>Loading movie details...</p>;
-  if (errorMovies) return <p>Error loading movie details: {errorMovies}</p>;
+  if (loadingMovies)  return <ErrorPage message="Your dashboard is loading and will be ready shortly..." />;
+  if (errorMovies) return  <ErrorPage message={`Error loading movie details: ${errorMovies}`} />;
 
   const decodedName = decodeURIComponent(movieName || "");
   const movie = movies?.find((m) => m.name === decodedName);
